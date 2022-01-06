@@ -662,7 +662,7 @@ height: 130px;
 }
 
 .seccion2{
-padding-bottom: 0px;
+padding-bottom: 20px;
 }
 	
 .seccion2 h1{
@@ -736,5 +736,9 @@ display:none;
 #c_2{
 	opacity: 1;
 	margin-top: 0;
+}
+
+.seccion3{
+    padding-top: 15px;
 }
 }

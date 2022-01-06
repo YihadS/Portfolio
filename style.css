@@ -648,18 +648,23 @@ perspective: 300px;
 
 .carousel .carousel-item {
 margin-top: -5%;
-width: 350px;
+width: 250px;
 }
 
 .carousel img{
 z-index: 999;
-height: 180px;
+height: 130px;
 }
 
 .seccion2{
 padding-bottom: 0px;
 }
-
+	
+.seccion2 h1{
+padding-top: 10px;
+padding-bottom: 15px;
+}
+	
 #c_2{
 opacity: 0;
 margin-top: -76%;
@@ -712,4 +717,6 @@ font-size:18px;
 .caja{
 dispaly:none;
 }
+	
+	
 }

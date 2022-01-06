@@ -683,13 +683,14 @@ transition: all 0.5s ease-in-out;
 }
 	
 h1 {
-  font-size: 5.9vw;
-}
-h2 {
-  font-size: 3.0vh;
-}
-p {
-  font-size: 2vmin;
+  font-size: 20px;
 }
 
+p {
+  font-size: 16px;
+}
+
+button{
+font-size:18px;
+	}
 }

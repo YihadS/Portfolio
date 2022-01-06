@@ -647,8 +647,8 @@ padding: 4%;
 .carousel{
 margin-left: 5%;
 width: 90%;
-height: 400px;
-perspective: 300px;
+height: 300px;
+perspective: 250px;
 }
 
 .carousel .carousel-item {

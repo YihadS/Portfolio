@@ -700,5 +700,11 @@ font-size:18px;
  padding-top: 15px;
  padding-bottom: 30px;
 }
-	
+
+.formulario button{
+	font-size: 18px;
+}
+.formulario textarea{
+font-size:16px;	
+}
 }

@@ -675,11 +675,11 @@ transition: all 0.5s ease-in-out;
 }
 
 .formulario input{
-font-size: 20px;
+font-size: 16px;
 }
 
 .formulario textarea{
-font-size: 20px;
+font-size: 16px;
 }
 	
 h1 {
@@ -701,10 +701,8 @@ font-size:18px;
  padding-bottom: 30px;
 }
 
-.formulario button{
+.formulario #enviar{
 	font-size: 18px;
 }
-.formulario textarea{
-font-size:16px;	
-}
+
 }

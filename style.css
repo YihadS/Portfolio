@@ -709,5 +709,7 @@ font-size:18px;
 .formulario #enviar{
 	font-size: 18px;
 }
-
+.caja{
+dispaly:none;
+}
 }

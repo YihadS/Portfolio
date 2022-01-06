@@ -728,5 +728,13 @@ display:none;
 .gqTMHp{
 margin-right:60px;
 }
-	
+
+.botones{
+display:none;
+}
+
+#c_2{
+	opacity: 1;
+	margin-top: 0;
+}
 }

@@ -720,11 +720,13 @@ font-size:18px;
 	font-size: 18px;
 }
 .caja{
-dispaly:none;
+display:none;
 }
-	
+.caja li{
+display:none;
+}	
 .gqTMHp{
-margin-right:30px;
+margin-right:60px;
 }
 	
 }

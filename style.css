@@ -624,7 +624,12 @@ input[type=submit]:hover {
 .row1{
 width: 100%;
 }
-
+	
+.seccion1 p{
+width: 90%;
+margin-left: 5%;
+}
+	
 #a2{
 text-align: center;
 }

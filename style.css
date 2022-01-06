@@ -682,8 +682,14 @@ transition: all 0.5s ease-in-out;
 	font-size: 20px;
 }
 	
-body{
-    overflow-x: hidden;
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2vmin;
 }
 
 }

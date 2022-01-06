@@ -597,8 +597,7 @@ input:focus {
   box-shadow: none !important;
 }
 
-textarea{
-	
+textarea{	
 }
 
 input[type=submit] {
@@ -616,23 +615,24 @@ input[type=submit]:hover {
   color: white;
 }
 
+
+
 /* Diseño Responsivo */
 
 @media only screen and (max-width: 600px){
 
 .row1{
-	width: 100%;
+width: 100%;
 }
 
-
 #a2{
-	text-align: center;
+text-align: center;
 }
 
 .seccion1 button {
-	margin-top: 30px;
-	margin-bottom: 100px;
-	padding: 5%;
+margin-top: 30px;
+margin-bottom: 100px;
+padding: 5%;
 }
 
 .seccion2 button {
@@ -647,22 +647,22 @@ perspective: 300px;
 }
 
 .carousel .carousel-item {
-	margin-top: -5%;
-	width: 350px;
+margin-top: -5%;
+width: 350px;
 }
 
 .carousel img{
-	z-index: 999;
-	height: 180px;
+z-index: 999;
+height: 180px;
 }
 
 .seccion2{
-		padding-bottom: 0p;
+padding-bottom: 0px;
 }
 
 #c_2{
-	opacity: 0;
-	margin-top: -76%;
+opacity: 0;
+margin-top: -76%;
 }
 
 .tv{
@@ -675,11 +675,11 @@ transition: all 0.5s ease-in-out;
 }
 
 .formulario input{
-	font-size: 20px;
+font-size: 20px;
 }
 
 .formulario textarea{
-	font-size: 20px;
+font-size: 20px;
 }
 	
 h1 {
@@ -692,5 +692,12 @@ p {
 
 button, #btn1, #btn2, #btn3{
 font-size:18px;
-	}
+}
+	
+.formulario{
+ width: 90%;
+ margin-left: 5%;
+ padding-top: 30px;
+}
+	
 }

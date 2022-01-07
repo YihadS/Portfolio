@@ -216,6 +216,10 @@ position: relative; left: 0px; top:0px;
   clear: both;
 }
 
+.seccion1 img{
+border: 1px solid transparent;
+border-radius: 15%;
+}
 .seccion1{
 		border-bottom: 8px solid #222;
 		 z-index: 999;

@@ -683,7 +683,9 @@ margin-left: 5%;
 width: 90%;
 transition: all 0.5s ease-in-out;
 }
-	
+.tv p{
+-webkit-text-stroke: 0.3px black;
+}	
 .row img{
 	width:110px;
 	height: 110px;

@@ -32,7 +32,7 @@ btn1.onclick = function(){
 function encender(){
 if (interruptor.checked == true){
 	tv.style.opacity="1";
-	opacity.style.background="rgba(0, 0, 0, 0.9)";
+	opacity.style.background="rgba(0, 0, 0, 0.7)";
 	background.style.background="url('img/miki.gif')";
 	background.style.backgroundSize=" cover";
     background.style.backgroundPosition=" center";

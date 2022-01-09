@@ -22,6 +22,10 @@ body{
 	background: linear-gradient(to left, black, #111111);
 }
 
+#whatsapp-widget .ww-text{
+display:none;	
+}
+
 button:focus{
   background-color: red;
 }

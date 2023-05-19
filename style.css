@@ -660,6 +660,10 @@ padding: 4%;
 .seccion3 .col{
 width: 100%;
 }
+	
+.seccion3 a{
+margin: 20px;
+}
 
 .carousel{
 margin-left: 5%;

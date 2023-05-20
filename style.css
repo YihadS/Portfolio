@@ -700,6 +700,7 @@ input[type=text], select, textarea {
   outline: 0;
   background: transparent;
   border-bottom: 1px solid #02fff8 !important;
+  color: white;
 }
 #fname:focus, #mail:focus{
   border-bottom: 1px solid #e1287e !important;

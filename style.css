@@ -889,6 +889,7 @@ width: 250px;
 
 .seccion4 .col img{
 	width: 80px;
+	height: 80px;
    }
 
 #tree{
@@ -899,10 +900,10 @@ width: 250px;
 
 #arrow{
 	position: absolute;
-	top: 470px;
+	top: 550px;
 	left: 0;
-	width: 180px;
+	width: 160px;
 	opacity: 0.8;
-	animation: infinite linear 3.5s floating;
+	animation: infinite linear 5s floating;
 }
 }

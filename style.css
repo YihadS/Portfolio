@@ -27,6 +27,7 @@ display:none;
 }
 
 html{
+	overflow-x: hidden;
 	margin-bottom: 0;
 	scroll-behavior: smooth;
 	background: linear-gradient(to left, black, #111111);

@@ -26,9 +26,6 @@ body{
 display:none;	
 }
 
-button:focus{
-  background-color: red;
-}
 html{
 	margin-bottom: 0;
 	scroll-behavior: smooth;
@@ -50,17 +47,28 @@ p{
  padding-top: 10px;
 }
 
-button{
+.seccion1 button{
+	cursor: pointer;
 	color: white;
 	font-size: 26px;
 	font-family: blackthorns-regular;
-	background: red;
-	border: none;
+	background: transparent;
+	box-shadow: 0px 0px 25px #e1287e;
+	border-bottom: 5px double #e1287e;
+	border-left: 5px double #e1287e;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
 	padding-top: 2%;
 	padding-bottom: 2%;
+	transition: all 0.5s ease-in;
 }
+
+.seccion1 button:hover{
+	transition: all 0.5s ease-in;
+	background: #e1287e;
+	box-shadow: 0px 0px 45px #e1287e;
+}
+
 
 
 /* Fondo Animado */
@@ -226,20 +234,31 @@ border-radius: 15%;
 height: 400px;
 }
 .seccion1{
-		border-bottom: 8px solid #222;
-		 z-index: 999;
-  position: sticky;
+border-bottom: 8px solid  #222;
+z-index: 999;
+position: sticky;
 }
 
 .seccion1 button {
 	margin-bottom: 165px;
 }
-/* seccion2 */
 
+
+/* seccion2 */
 .seccion2{
 		background: linear-gradient(to left, black, #111111);
 		padding-bottom: 60px;
 		border-bottom: 8px solid #222;
+		position: relative;
+}
+
+#tree{
+	position: absolute;
+	top: 0;
+	left: 85%;
+	width: 500px;
+	opacity: 0.5;
+	z-index: 0;
 }
 
 .seccion2 h1{
@@ -259,8 +278,8 @@ perspective: 300px;
 }
 
 .card{
-		box-shadow: 8px 8px 8px #333;
-		border: 2px solid white;
+		box-shadow: 2px 2px 2px #02fff8;
+		border: 2px solid #02fff749;
 }
 
 .card p, .card a{
@@ -301,8 +320,10 @@ background-color: #222 !important;
   font-size: 25px;
   color: white;
 	font-family: blackthorns-regular;
-	background: red;
-	border: none;
+	background: transparent;
+	border-bottom: 5px double #e1287e;
+	border-left: 5px double #e1287e;
+	box-shadow: 0px 0px 5px #e1287e;
 	padding-left: 3.5%;
 	padding-right: 3.5%;
 	padding-top: 2%;
@@ -310,12 +331,13 @@ background-color: #222 !important;
 	transition: all 0.5s ease-in-out;
 	z-index: 999;
 	position: sticky;
-	box-shadow: 8px 8px 8px #111;
 }
 
 #btn3:hover{
-	  transform: scale(1.2);
-		transition: all 0.5s ease-in-out;
+	  transform: scale(1.1);
+	  background: #e1287e;
+	  box-shadow: 0px 0px 25px #e1287e;
+	  transition: all 0.5s ease-in-out;
 }
 
 .botones button{
@@ -334,11 +356,11 @@ background-color: #222 !important;
 }
 
 #btn1{
-	background: red;
+	background: #e1287e;
 }
 
 .botones button:hover{
-  background: red;
+  background: #e1287e;
 }
 
 #c_2{
@@ -355,30 +377,36 @@ background-color: #222 !important;
 
 .seccion3{
     padding-top: 50px;
-		background: linear-gradient(to left, black, #111111);
-		padding-bottom: 20px;
-		border-bottom: 8px solid #222;
+	background: url("img/synth.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 20px;
+	border-bottom: 8px solid #222;
+	position: relative;
 }
 
 .row{
 text-align: center;
 }
 
-.row img{
+.seccion3 .row img{
 	width:170px;
 	height: 170px;
   margin-bottom: 40px;
   border: 5px solid #222;
   padding: 5%;
   border-radius: 50%;
-  box-shadow: 5px 5px 5px #222;
+  box-shadow: 5px 5px 5px #e1287e;
   transition: all 0.5s ease-in-out;
   	z-index: 999;
     position: sticky;
 }
 
-.row img:hover{
-  box-shadow: 5px 5px 5px red;
+.seccion3 .row img:hover{
+  background: #e1287e ;
+  border: 5px solid #e1287e;
+  box-shadow: 5px 5px 5px #e1287e;
   transition: all 0.5s ease-in-out;
   animation: shake 1.2s linear ;
 }
@@ -386,6 +414,7 @@ text-align: center;
 .seccion3 .col{
 width: 20%;
 }
+
 
 @keyframes shake {
 0% {
@@ -414,6 +443,7 @@ width: 20%;
 		background: linear-gradient(to left, black, #111111);
 		padding-bottom: 30px;
 		border-bottom: 8px solid #222;
+		position: relative;
 	}
 
 .row4{
@@ -431,7 +461,7 @@ transition: all 0.5s ease-in-out;
 }
 .tv{
 background: none;
-border: 8px solid #222;
+border: 8px solid #02fff749;
 margin-bottom: 15px;
 margin-left: 20%;
 width: 60%;
@@ -575,6 +605,72 @@ input:checked + .toy-toggle .handle-on {
 	transition-timing-function: ease-out;
 }
 
+#arrow{
+	position: absolute;
+	top: 250px;
+	left: 0;
+	width: 250px;
+	opacity: 0.8;
+	transform: rotate(90deg);
+	animation: infinite linear 5s floating;
+}
+
+@keyframes floating {
+	0% {
+	  margin-top: 0;
+	}
+	50% {
+	  margin-top: -80px;
+	}
+	75% {
+	  margin-top: -30px;
+	}
+	100% {
+	  margin-top: 0;
+	}
+  }
+  
+
+.seccion4 .col{
+	margin-top: 80px;
+	width: 33.3%;
+	margin-bottom: 50px;
+}
+
+.seccion4 .col img{
+	width: 100px;
+	-webkit-filter: drop-shadow(5px 5px 5px #e1287e);
+	filter: drop-shadow(15px 15px 15px #e1287e);
+	transition: all 0.5s ease-in-out;
+}
+.seccion4 .col img:hover{
+	width: 100px;
+	-webkit-filter: drop-shadow(5px 5px 5px #02fff8);
+	filter: drop-shadow(25px 25px 25px #02fff8);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.seccion4 .col:first-child img:hover + h1{
+	text-shadow: 0px 0px 15px #02fff8;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+  }.seccion4 .col:nth-child(2) img:hover + h1{
+	text-shadow: 0px 0px 15px #02fff8;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+  }.seccion4 .col:last-child img:hover + h1{
+	text-shadow: 0px 0px 15px #02fff8;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+  }
+
+.seccion4 .col h1{
+	text-shadow: 0px 0px 15px #e1287e;
+	font-size: 35px;
+	transition: all 0.5s ease-in-out;
+}
+
 /* Seccion5 */
 
 .seccion5{
@@ -590,7 +686,7 @@ input:checked + .toy-toggle .handle-on {
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid #02fff8; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -599,32 +695,37 @@ input[type=text], select, textarea {
   font-family: blackthorns-regular;
   color: white;
 }
-input {
+#fname, #mail{
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #02fff8 !important;
 }
-input:focus {
-  border-bottom: 1px solid white !important;
+#fname:focus, #mail:focus{
+  border-bottom: 1px solid #e1287e !important;
   box-shadow: none !important;
 }
-
-textarea{	
+#subject{
+	height: 200px;
 }
+textarea:focus {
+	border: 1px solid #e1287e;
+	outline: none !important;
+  }
 
 input[type=submit] {
 	font-family: blackthorns-regular;
-  background-color: red;
+  background-color: #e1287e;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
   z-index: 999;
   position: sticky;
+  border-bottom: none !important;
 }
 input[type=submit]:hover {
-  background-color:red;
+  background-color:#e1287e;
   color: white;
 }
 
@@ -768,5 +869,38 @@ display:none;
 .seccion1 img{
 height: 250px;
 width: 250px;
+}
+
+.seccion4 .col:first-child{
+	margin-top: 80px;
+}
+
+.seccion4 .col{
+	margin-top: 25px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.seccion4 .col h1{
+ font-size: 25px;
+}
+
+.seccion4 .col img{
+	width: 80px;
+   }
+
+#tree{
+	top: 0;
+	left: 70%;
+	width: 300px;
+}
+
+#arrow{
+	position: absolute;
+	top: 470px;
+	left: 0;
+	width: 180px;
+	opacity: 0.8;
+	animation: infinite linear 3.5s floating;
 }
 }
